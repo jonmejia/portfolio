@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 1. Clone the Repository
@@ -22,17 +20,17 @@ npm run dev
 
 Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Relevant Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To learn more about my project, and what the code written in this repository means, consider reading up on the documentation for the technologies used
 
-## Learn More
+- [Next.js](https://nextjs.org/docs)
+- [React](https://react.dev/reference/react)
+  -[Learn React](https://react.dev/learn) I would suggest looking at this first if you are new to React  
+- [Tailwind CSS](https://tailwindcss.com/docs/installation)
+- [ESLint](https://eslint.org/docs/latest/)
+- [Github Actions](https://docs.github.com/en/actions)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-# portfolio
+# Other Notes
+I have been writing code for a little while now, and while I've built some pretty cool stuff I've never taken the time to create a portfolio. If you like anything you see here feel free to copy paste as much as you'd like and make it your own.
