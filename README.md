@@ -26,7 +26,8 @@ To learn more about my project, and what the code written in this repository mea
 
 - [Next.js](https://nextjs.org/docs)
 - [React](https://react.dev/reference/react)
-  -[Learn React](https://react.dev/learn) I would suggest looking at this first if you are new to React  
+  
+  - [Learn React](https://react.dev/learn) I would suggest looking at this first if you are new to React  
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
 - [ESLint](https://eslint.org/docs/latest/)
 - [Github Actions](https://docs.github.com/en/actions)
