@@ -3,11 +3,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 1. Clone the Repository
-   - HTTPS:
+- HTTPS:
 ```
 git clone https://github.com/jonmejia/portfolio.git
 ```
-  - SSH:
+- SSH:
 ```
 git clone git@github.com:jonmejia/portfolio.git
 ```
