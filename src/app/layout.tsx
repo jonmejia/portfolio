@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Domine } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/shared/Header";
 
 const font = Domine({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}><Header />{children}</body>
     </html>
   );
 }
