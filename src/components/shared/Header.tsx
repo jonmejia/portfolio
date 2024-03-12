@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 const Header = (): JSX.Element => {
   const router = useRouter();
   return (
-    <div className="flex justify-between items-center px-4">
+    <div className="flex justify-between items-center pl-4 pb-2 bg-zinc-600 text-zinc-200">
       <Image
         onClick={() => router.push("/")}
         src="/greentea.svg"
@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
         width={60}
         height={60}
       />
-      <div>
+      <div className="pr-8">
         <span className="px-4" onClick={() => router.push("/")}>
           Home
         </span>
