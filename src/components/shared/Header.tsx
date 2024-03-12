@@ -5,8 +5,9 @@ import { useRouter } from "next/navigation";
 const Header = (): JSX.Element => {
   const router = useRouter();
   return (
-    <div className="flex justify-between items-center pl-4 pb-2 bg-zinc-500 text-zinc-200">
+    <div className="flex justify-between items-center pl-4 pb-2">
       <Image
+        className="flex ml-2"
         onClick={() => router.push("/")}
         src="/greentea.svg"
         alt="green tea cup"
