@@ -1,26 +1,34 @@
-'use client'
-import React from 'react';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 const Header = (): JSX.Element => {
-
   const router = useRouter();
   return (
-    <div className='flex justify-between items-center px-4'>
+    <div className="flex justify-between items-center pl-4 pb-2 bg-zinc-500 text-zinc-200">
       <Image
-        onClick={() => router.push('/')}
-        src='/greentea.svg'
-        alt='green tea cup'
+        onClick={() => router.push("/")}
+        src="/greentea.svg"
+        alt="green tea cup"
         width={60}
         height={60}
       />
-      <span onClick={() => router.push('/')}>Home</span>
-      <span onClick={() => router.push('/About')}>About</span>
-      <span onClick={() => router.push('/Projects')}>Projects</span>
-      <span onClick={() => router.push('/Contact')}>Contact Me</span>
+      <div className="pr-8">
+        <span className="px-4" onClick={() => router.push("/")}>
+          Home
+        </span>
+        <span className="px-4" onClick={() => router.push("/About")}>
+          About
+        </span>
+        <span className="px-4" onClick={() => router.push("/Projects")}>
+          Projects
+        </span>
+        <span className="px-4" onClick={() => router.push("/Contact")}>
+          Contact Me
+        </span>
+      </div>
     </div>
   );
-
 };
 
 export default Header;
