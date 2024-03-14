@@ -1,8 +1,9 @@
 import Image from "next/image";
+import {HomepageCard} from '../components/HomepageCard'
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Image
         className="rounded-full border-4 border-[#ADBC9F]"
         src={"/jonathan.jpg"}
@@ -10,6 +11,8 @@ export default function Home() {
         height={250}
         alt="image of Jonathan"
       />
-    </div>
+      <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+<HomepageCard projectImage='img_string' projectName='Project Investing' prodUrl='www.projectinvesting.com' localUrl='localhost:4000'/>
+    </main>
   );
 }
