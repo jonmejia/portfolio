@@ -1,18 +1,11 @@
 ## Getting Started
 
 1. Clone the Repository
-- HTTPS:
-```
-git clone https://github.com/jonmejia/portfolio.git
-```
-- SSH:
 ```
 git clone git@github.com:jonmejia/portfolio.git
-```
-2. Install npm packages
-```
 cd portfolio/ && npm install
 ```
+
 3. Start Development Server
 ```
 npm run dev
