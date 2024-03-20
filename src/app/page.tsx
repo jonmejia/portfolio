@@ -1,6 +1,5 @@
 import Image from "next/image";
-import {HomepageCard} from '../components/HomepageCard'
-
+import ProjectCarousel from '../components/ProjectCarousel'
 export default function Home() {
   return (
     <main>
@@ -12,7 +11,7 @@ export default function Home() {
         alt="image of Jonathan"
       />
       <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-<HomepageCard projectImage='img_string' projectName='Project Investing' prodUrl='www.projectinvesting.com' localUrl='localhost:4000'/>
+			<ProjectCarousel/>
     </main>
   );
 }
