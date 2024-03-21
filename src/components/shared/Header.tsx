@@ -7,7 +7,7 @@ const Header = (): JSX.Element => {
   return (
     <div className="flex justify-between items-center pl-4 pb-2">
       <Image
-        className="flex ml-2"
+        className="flex ml-8"
         onClick={() => router.push("/")}
         src="/greentea.svg"
         alt="green tea cup"
