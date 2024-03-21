@@ -27,6 +27,6 @@ To learn more about my project, and what the code written in this repository mea
 
 
 # Other Notes
-I use [this](https://favicon.io/) to turn my face into the favicon
+I used [this website](https://favicon.io/) to turn my face into the favicon
 
 I have been writing code for a little while now, and while I've built some pretty cool stuff I've never taken the time to create a portfolio. If you like anything you see here feel free to copy paste as much as you'd like and make it your own.
