@@ -1,23 +1,35 @@
-'use client'
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import ProjectCarousel from "../components/ProjectCarousel";
 import Icon from "../components/shared/Icon";
+import SuccessAlert from "../components/shared/SuccessAlert";
 import linkedin from "../../public/linkedin.svg";
 import github from "../../public/github.svg";
 import mail from "../../public/mail.svg";
 
 export default function Home() {
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const openNewTab = (url: string) => {
     window.open(url, "_blank");
   };
-	const copyText = (text: string) =>{
-		navigator.clipboard.writeText(text)
-		alert('copied email')
-	}
+
+  const copyText = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setShowSuccessAlert(true);
+    setTimeout(() => setShowSuccessAlert(false), 3000); //
+  };
 
   return (
     <main>
       <div className="flex flex-wrap justify-center my-14">
+            {showSuccessAlert && (
+              <SuccessAlert
+                message="Successfully copied email to clipboard"
+                visibility={true}
+              />
+            )}
+ 
         <Image
           className="rounded-full border-4 border-[#ADBC9F]"
           src={"/jonathan.jpg"}
@@ -49,7 +61,7 @@ export default function Home() {
               alt="mail icon"
               onClick={() => copyText("jonathan@dataminded.net")}
             />
-          </div>
+        </div>
         </span>
       </div>
       <h2 className="text-center text-xl"> Recent Projects</h2>
