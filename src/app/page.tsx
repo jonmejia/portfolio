@@ -1,19 +1,25 @@
-'use client'
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import ProjectCarousel from "../components/ProjectCarousel";
 import Icon from "../components/shared/Icon";
+import SuccessAlert from "../components/shared/SuccessAlert";
 import linkedin from "../../public/linkedin.svg";
 import github from "../../public/github.svg";
 import mail from "../../public/mail.svg";
 
 export default function Home() {
+  const [showAlert, setShowAlert] = useState(false);
   const openNewTab = (url: string) => {
     window.open(url, "_blank");
   };
-	const copyText = (text: string) =>{
-		navigator.clipboard.writeText(text)
-		alert('copied email')
-	}
+  const copyText = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setShowAlert(!showAlert);
+    setTimeout(() => {
+      setShowAlert(!showAlert);
+    }, 10000);
+  };
 
   return (
     <main>
@@ -49,6 +55,7 @@ export default function Home() {
               alt="mail icon"
               onClick={() => copyText("jonathan@dataminded.net")}
             />
+            <SuccessAlert message="email copied" />
           </div>
         </span>
       </div>
