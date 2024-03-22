@@ -5,20 +5,20 @@ import Image from "next/image";
 interface IconProps {
   src: string;
   alt: string;
-  url?: string;
+  onClick?: () => void;
 }
 
-const Icon: React.FC<IconProps> = ({ src, alt, url }) => {
-  const openNewTab = () => {
-    if (url) {
-      window.open(url, "_blank");
+const Icon: React.FC<IconProps> = ({ src, alt, onClick }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
     }
   };
 
   return (
     <Image
       className="cursor-pointer"
-      onClick={openNewTab}
+      onClick={handleClick}
       src={src}
       alt={alt}
       width={30}

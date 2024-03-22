@@ -1,10 +1,20 @@
+'use client'
 import Image from "next/image";
 import ProjectCarousel from "../components/ProjectCarousel";
 import Icon from "../components/shared/Icon";
 import linkedin from "../../public/linkedin.svg";
 import github from "../../public/github.svg";
 import mail from "../../public/mail.svg";
+
 export default function Home() {
+  const openNewTab = (url: string) => {
+    window.open(url, "_blank");
+  };
+	const copyText = (text: string) =>{
+		navigator.clipboard.writeText(text)
+		alert('copied email')
+	}
+
   return (
     <main>
       <div className="flex flex-wrap justify-center my-14">
@@ -25,17 +35,19 @@ export default function Home() {
             <Icon
               src={linkedin}
               alt="linkedin icon"
-              url="https://www.linkedin.com/in/jonathan-mejia-swe/"
+              onClick={() =>
+                openNewTab("https://www.linkedin.com/in/jonathan-mejia-swe/")
+              }
             />
             <Icon
               src={github}
               alt="github-mark icon"
-              url="https://github.com/jonmejia"
+              onClick={() => openNewTab("https://github.com/jonmejia")}
             />
             <Icon
               src={mail}
               alt="mail icon"
-              url="mailto:jonathan@dataminded.net"
+              onClick={() => copyText("jonathan@dataminded.net")}
             />
           </div>
         </span>
