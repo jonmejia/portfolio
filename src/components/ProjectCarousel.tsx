@@ -6,21 +6,21 @@ export default function ProjectCarousel() {
 		<div className='flex justify-between'>
 			<HomepageCard
 				projectImage="img_string"
-				projectName="Project Investing"
+				projectName="Project"
 				prodUrl="www.projectinvesting.com"
 				localUrl="localhost:4000"
 				margin='mx-20'
 			/>
 			<HomepageCard
 				projectImage="img_string"
-				projectName="Project Investing"
+				projectName="Project"
 				prodUrl="www.projectinvesting.com"
 				localUrl="localhost:4000"
 				margin=''
 			/>
 			<HomepageCard
 				projectImage="img_string"
-				projectName="Project Investing"
+				projectName="Project"
 				prodUrl="www.projectinvesting.com"
 				localUrl="localhost:4000"
 				margin='mx-20'

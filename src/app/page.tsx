@@ -1,5 +1,9 @@
 import Image from "next/image";
 import ProjectCarousel from "../components/ProjectCarousel";
+import Icon from "../components/shared/Icon";
+import linkedin from "../../public/linkedin.svg";
+import github from "../../public/github.svg";
+import mail from "../../public/mail.svg";
 export default function Home() {
   return (
     <main>
@@ -11,12 +15,30 @@ export default function Home() {
           height={250}
           alt="image of Jonathan"
         />
-        <p className="mt-20 mx-6 w-2/5 text-lg">
-          Hey! I'm Jonathan. I'm currently a freelance software engineer
-          (keyboard for hire), and an avid vim enthusiast. Feel free to reach
-          out and let's have a cup of tea some time :)
-        </p>
-        <div></div>
+        <span className="mt-20 w-2/5 text-lg">
+          <p className="mx-6">
+            Hey! I'm Jonathan. I'm currently a freelance software engineer
+            (keyboard for hire), and an avid vim enthusiast. Feel free to reach
+            out and let's have a cup of tea some time :)
+          </p>
+          <div className="mt-8 flex justify-evenly">
+            <Icon
+              src={linkedin}
+              alt="linkedin icon"
+              url="https://www.linkedin.com/in/jonathan-mejia-swe/"
+            />
+            <Icon
+              src={github}
+              alt="github-mark icon"
+              url="https://github.com/jonmejia"
+            />
+            <Icon
+              src={mail}
+              alt="mail icon"
+              url="mailto:jonathan@dataminded.net"
+            />
+          </div>
+        </span>
       </div>
       <h2 className="text-center text-xl"> Recent Projects</h2>
       <div className="flex justify-center">
