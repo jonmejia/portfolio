@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useState } from "react";
 import Image from "next/image";
 import ProjectCarousel from "../components/ProjectCarousel";
@@ -39,9 +39,9 @@ export default function Home() {
         />
         <span className="mt-20 w-2/5 text-lg">
           <p className="mx-6">
-            Hey! I'm Jonathan. I'm currently a freelance software engineer
+            Hey! I&apos;m Jonathan. I&apos;m currently a freelance software engineer
             (keyboard for hire), and an avid vim enthusiast. Feel free to reach
-            out and let's have a cup of tea some time :)
+            out and let&apos;s have a cup of tea some time :)
           </p>
           <div className="mt-8 flex justify-evenly">
             <Icon
