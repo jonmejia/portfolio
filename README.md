@@ -5,7 +5,10 @@
 git clone git@github.com:jonmejia/portfolio.git
 cd portfolio/ && npm install
 ```
-
+2. Disable Next.js Telemetry ( Optional )
+```
+npx next telemetry disable
+```
 3. Start Development Server
 ```
 npm run dev

@@ -64,9 +64,9 @@ export default function Home() {
           </div>
         </span>
       </div>
-      <h2 className="text-center text-xl"> Recent Projects</h2>
+      <h2 className="text-center text-2xl"> Recent Projects</h2>
       <div className="flex justify-center">
-        <hr className="w-2/3 my-4" />
+        <hr className="w-2/3 my-6" />
       </div>
       <ProjectCarousel />
     </main>
