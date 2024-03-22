@@ -11,9 +11,10 @@ export default function Home() {
           height={250}
           alt="image of Jonathan"
         />
-        <p className="mt-8 mx-6">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
+        <p className="mt-20 mx-6 w-2/5 text-lg">
+          Hey! I'm Jonathan. I'm currently a freelance software engineer
+          (keyboard for hire), and an avid vim enthusiast. Feel free to reach
+          out and let's have a cup of tea some time :)
         </p>
       </div>
       <ProjectCarousel />
