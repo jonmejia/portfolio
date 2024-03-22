@@ -5,7 +5,7 @@
 git clone git@github.com:jonmejia/portfolio.git
 cd portfolio/ && npm install
 ```
-2. Disable Next.js Telemetry ( Optional )
+2. Disable [Next.js Telemetry](https://nextjs.org/telemetry) ( Optional )
 ```
 npx next telemetry disable
 ```
