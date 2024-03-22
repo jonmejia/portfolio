@@ -23,13 +23,13 @@ export default function Home() {
   return (
     <main>
       <div className="flex flex-wrap justify-center my-14">
-            {showSuccessAlert && (
-              <SuccessAlert
-                message="Successfully copied email to clipboard"
-                visibility={true}
-              />
-            )}
- 
+        {showSuccessAlert && (
+          <SuccessAlert
+            message="Successfully copied email to clipboard"
+            visibility={true}
+          />
+        )}
+
         <Image
           className="rounded-full border-4 border-[#ADBC9F]"
           src={"/jonathan.jpg"}
@@ -61,7 +61,7 @@ export default function Home() {
               alt="mail icon"
               onClick={() => copyText("jonathan@dataminded.net")}
             />
-        </div>
+          </div>
         </span>
       </div>
       <h2 className="text-center text-xl"> Recent Projects</h2>
