@@ -16,7 +16,7 @@ export default function Home() {
           (keyboard for hire), and an avid vim enthusiast. Feel free to reach
           out and let's have a cup of tea some time :)
         </p>
-				<div></div>
+        <div></div>
       </div>
       <h2 className="text-center text-xl"> Recent Projects</h2>
       <div className="flex justify-center">
