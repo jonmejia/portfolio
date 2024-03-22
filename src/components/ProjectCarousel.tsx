@@ -9,7 +9,7 @@ export default function ProjectCarousel() {
 				projectName="Project Investing"
 				prodUrl="www.projectinvesting.com"
 				localUrl="localhost:4000"
-				margin='mx-16'
+				margin='mx-20'
 			/>
 			<HomepageCard
 				projectImage="img_string"
@@ -23,7 +23,7 @@ export default function ProjectCarousel() {
 				projectName="Project Investing"
 				prodUrl="www.projectinvesting.com"
 				localUrl="localhost:4000"
-				margin='mx-16'
+				margin='mx-20'
 			/>
 		</div>
 	);

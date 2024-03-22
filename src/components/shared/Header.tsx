@@ -24,10 +24,7 @@ const Header = (): JSX.Element => {
         <span className="px-4" onClick={() => router.push("/Projects")}>
           Projects
         </span>
-        <span className="px-4" onClick={() => router.push("/Contact")}>
-          Contact Me
-        </span>
-      </div>
+     </div>
     </div>
   );
 };
