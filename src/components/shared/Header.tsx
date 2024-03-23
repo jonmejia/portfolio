@@ -15,13 +15,13 @@ const Header = (): JSX.Element => {
 				height={60}
 			/>
 			<div className="pr-8">
-				<span className="px-4" onClick={() => router.push("/")}>
+				<span className="px-4 cursor-pointer" onClick={() => router.push("/")}>
 					Home
 				</span>
-				<span className="px-4" onClick={() => router.push("/About")}>
+				<span className="px-4 cursor-pointer" onClick={() => router.push("/About")}>
 					About
 				</span>
-				<span className="px-4" onClick={() => router.push("/Projects")}>
+				<span className="px-4 cursor-pointer" onClick={() => router.push("/Projects")}>
 					Projects
 				</span>
 			</div>
